@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Felidae';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pobeda'), url('./Felidae.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Onest'), url('./Onest.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mirra';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mirra'), url('./Mirra.otf') format('opentype');
+}
