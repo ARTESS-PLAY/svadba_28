@@ -299,7 +299,7 @@ h3 {
 }
 
 .invite {
-  margin-top: 54px;
+  margin-top: 254px;
   margin-bottom: 280px;
   position: relative;
 }
@@ -459,6 +459,10 @@ h3 {
 .wish {
   margin-bottom: 277px;
   position: relative;
+}
+.wish .container {
+  position: relative;
+  z-index: 20;
 }
 .wish h2 {
   margin-bottom: 51px;
