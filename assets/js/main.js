@@ -74,9 +74,7 @@ $(document).ready(function () {
 
         $('.form__button--submit').addClass('form__button--active ');
 
-        let str = `<b>Новый ответ на приглашение:</b>%0A<b>Имя:</b> ${name}%0A<b>Фамилия:</b> ${surname} %0A<b>${
-            can == 'can' ? 'Смогу' : 'Не смогу'
-        }</b>%0A<b>Алкоголь:</b>`;
+        let str = `<b>Новый ответ на приглашение:</b>%0A<b>Имя:</b> ${name}%0A<b>Фамилия:</b> ${surname} %0A<b>${can}</b>%0A<b>Алкоголь:</b>`;
 
         if (alco.length) {
             alco.map((val) => {
