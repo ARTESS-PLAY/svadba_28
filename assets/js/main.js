@@ -54,7 +54,7 @@ $(document).ready(function () {
             alco.push($(this).val());
         });
 
-        const can = $('.form__button--active').text();
+        const can = $('.form__btns .form__button--active').text();
         if (!name) {
             $('#name').addClass('input--error');
             valid = false;
@@ -74,17 +74,17 @@ $(document).ready(function () {
 
         $('.form__button--submit').addClass('form__button--active ');
 
-        let str = `<b>Новый ответ на приглашение:</b>%0A<b>Имя:</b> ${name}%0A<b>Фамилия:</b> ${surname} %0A<b>${can}</b>%0A<b>Алкоголь:</b>`;
+        let str = `<b>Новый ответ на приглашение:</b>\n<b>Имя:</b> ${name}\n<b>Фамилия:</b> ${surname} \n<b>${can}</b>\n<b>Алкоголь:</b>`;
 
         if (alco.length) {
             alco.map((val) => {
-                str += `%0A -- ${val}`;
+                str += `\n -- ${val}`;
             });
         } else {
             str += ` Не указан`;
         }
 
-        fetch(urlLink + str)
+        fetch(encodeURI(urlLink + str))
             .then((data) => {
                 $('section.form').hide();
                 $('section.tnx').fadeIn();
